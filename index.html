@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ff0de587d.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <div class="nav">
+        <h1>Cookie Clicker</h1>
+    </div>
+    <div class="main">
+        <div class="cookiearea">
+            <img src="cookie.png" alt="" class="cookie" onclick="cookieclick()">
+            <div class="cookiecount">
+                <h1>Cookies: <span id="cookienum"></span></h1>
+                <h1>Auto: <span id="CPS"></span></h1>
+                <h1>Cookies Per Click: <span id="CPC"></span></h1>
+            </div>
+        </div>
+    
+        <div class="upgrades">
+            <div class="upgrader" id="clicker" onclick="clickerclick()">
+                <div class="details">
+                    <h2>Clicker</h2>
+                    <i class="fa-regular fa-hand-pointer"></i>
+                    <p class="upgradertext"><span id="clickercost"></span></p>
+                </div>
+                <div class="count"><span id="clickercount"></span></div>
+            </div>
+            <div class="upgrader" id="gran" onclick="granclick()">
+                <div class="details">
+                    <h2>Grandma</h2>
+                    <i class="fa-solid fa-person-cane"></i>
+                    <p class="upgradertext"><span id="grancost"></span></p>
+                </div>
+                <div class="count"><span id="grancount"></span></div>
+            </div>
+            <div class="upgrader" id="farm" onclick="farmclick()">
+                <div class="details">
+                    <h2>Farm</h2>
+                    <i class="fa-solid fa-seedling"></i>
+                    <p class="upgradertext"><span id="farmcost"></span></p>
+                </div>
+                <div class="count"><span id="farmcount"></span></div>
+            </div>
+            <div class="upgrader" id="factory" onclick="factoryclick()">
+                <div class="details">
+                    <h2>Factory</h2>
+                    <i class="fa-solid fa-industry"></i>
+                    <p class="upgradertext"><span id="factorycost"></span></p>
+                </div>
+                <div class="count"><span id="factorycount"></span></div>
+            </div>
+            <div class="upgrader" id="space" onclick="spaceclick()">
+                <div class="details">
+                    <h2>Space</h2>
+                    <i class="fa-solid fa-rocket"></i>
+                    <p class="upgradertext"><span id="spacecost"></span></p>
+                </div>
+                <div class="count"><span id="spacecount"></span></div>
+            </div>
+            <div class="upgrader" id="portal" onclick="portalclick()">
+                <div class="details">
+                    <h2>Portal</h2>
+                    <i class="fa-solid fa-hand-sparkles"></i>
+                    <p class="upgradertext"><span id="portalcost"></span></p>
+                </div>
+                <div class="count"><span id="portalcount"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
